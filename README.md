@@ -1,2 +1,2 @@
 # Estudos
-Espaço destinado a alguns exercícios realizados no curso de HTML e CSS.
+Espaço desdinado aos exercícios do curso HTML e CSS.
