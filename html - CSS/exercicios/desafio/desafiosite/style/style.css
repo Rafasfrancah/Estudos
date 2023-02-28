@@ -20,8 +20,13 @@
 
     --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
     --fonte-destaque: 'Bebas Neue';
-    --fonte-android: 'Android';
-       
+    --fonte-android: 'Android';       
+
+}
+
+*{
+   margin: 0px;
+   padding: 0px;
 
 }
 body {
