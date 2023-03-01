@@ -35,6 +35,10 @@ body {
     background-color:var(--cor0);
     font-family: var(--fonte-padrao);
 }
+a.externo::after{
+    content: '\00A0\F517';
+
+}
 
 main  p {
    margin: 15px 0px; 
@@ -140,8 +144,17 @@ aside {
     background-color: var(--cor1);
     padding: 10px;
     border-radius: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.322);
+}
+aside > h3 {
+    background-color: var(--cor4);
+    color: white;
+    padding: 10px;
+    margin: -10px -10px 0px -10px;
+    border-radius: 10px 10px 0px 0px;
 }
 aside > ul {
+    list-style-type: '\2714\00A0\00A0';
     list-style-position: inside;
     columns: 2;
 
