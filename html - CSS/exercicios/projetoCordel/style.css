@@ -63,6 +63,10 @@ section {/*Configuração para section normal e imagem - Ganhar espaço para o e
 
 }
 
+section > p {/*Section do parágrafo. Espaço entre os parágrafos*/
+    padding-bottom: 2em;
+}
+
 section.normal {/*Section da classe normal*/
     background-color: white;
     color: black;
@@ -72,13 +76,31 @@ section.normal {/*Section da classe normal*/
 section.imagem {/*Section da classe imagem*/
     background-color: rgb(63, 59, 59);
     color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.795);/*Sombra interna na imagem*/
+    background-size: cover;/*Ajusta a imagem (diminui)*/
+    background-attachment: fixed;/*Fixando a imagem (Efeito paralax)*/
 
 }
 
-section.imagem > p{/*Cor do parágrafo da section imagem*/
+section.imagem > p {/*Cor do parágrafo da section imagem*/
     display: inline-block;/*Caixa que se adapta ao tamanho do conteúdo*/
     padding: 5px;/*Espaço para não colar nas margens*/
-    background-color: rgba(0, 0, 0, 0.396);
+    background-color: rgba(0, 0, 0, 0.524);
+    text-shadow: 1px 1px 0px black;/*Sombra no texto*/
+    
+}
+
+section#img01 {
+    background-image: url('imagens/background001.jpg');
+    background-position: right center;
+    
+
+}
+
+section#img02 {
+    background-image: url('imagens/background002.jpg');
+    
+
 }
 
 footer {/*Rodapé*/
