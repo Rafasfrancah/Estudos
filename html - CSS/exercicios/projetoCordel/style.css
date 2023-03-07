@@ -1,4 +1,16 @@
 @charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+:root{
+    --fonte1: verdana, Geneva, Tahoma, sans-serif; 
+    --fonte2: 'Passion One', cursive;
+    --fonte3: 'Sriracha', cursive;
+}
+
+
 /* (*)Configurações gerais. OBS: Juntar os elementos*/
 * {
     margin: 0px;
@@ -8,6 +20,7 @@
 html, body{/*Corpo do site*/
     min-height: 100vh;/*tamanho mínimo da altura*/
     background-color: darkgray;
+    font-family: var(--fonte1);
 
 }
 
@@ -21,6 +34,8 @@ header > h1 {/*h1 do cabeçalho*/
     padding-top: 50px;/*Espaço acima do cabeçalho*/
     /*text-transform: uppercase; /*Letras maiúsculas*/
     font-variant: small-caps; /*Outra maneira de letras grandes*/
+    font-family: var(--fonte2);
+    font-size: 10vw;
 
 }
 
@@ -43,6 +58,8 @@ section {/*Configuração para section normal e imagem - Ganhar espaço para o e
     padding-bottom: 10vh;/*Ganha 10 por cento da altura*/
     line-height: 2em;/*Espaçamento entre linhas*/
     padding-left: 30px;/*Afastar da margem esquerda*/
+    font-family: var(--fonte3);
+    font-size: 3.5vw;
 
 }
 
@@ -59,7 +76,8 @@ section.imagem {/*Section da classe imagem*/
 }
 
 section.imagem > p{/*Cor do parágrafo da section imagem*/
-    width: 400px;/*Largura*/
+    display: inline-block;/*Caixa que se adapta ao tamanho do conteúdo*/
+    padding: 5px;/*Espaço para não colar nas margens*/
     background-color: rgba(0, 0, 0, 0.396);
 }
 
