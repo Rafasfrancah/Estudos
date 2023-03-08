@@ -12,6 +12,7 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative; /*Primeiro passoa para cabeçalho fixo*/
         }
 
         td, th {
@@ -29,6 +30,13 @@
             background-color: gray;
             color: white;            
         }
+
+        thead > tr > th {
+            position: sticky;/*Segundo passoa para cabeçalho fixo*/
+            top: -1px;/*Terceiro passoa para cabeçalho fixo*/
+            background-color: rgb(58, 55, 55);
+        }
+
         /*:nth-child(2n) tarja cinza zebrada de duas em duas. (2n) pode ser odd ou even que significa par ou impar*/
         tbody > tr:nth-child(2n) {
             background-color: lightgrey;
