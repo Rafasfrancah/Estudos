@@ -27,7 +27,13 @@
         }
         thead, tfoot {
             background-color: gray;
-            color: white;
+            color: white;            
+        }
+        /*:nth-child(2n) tarja cinza zebrada de duas em duas. (2n) pode ser odd ou even que significa par ou impar*/
+        tbody > tr:nth-child(2n) {
+            background-color: lightgrey;
+
+
         }
         td.num {
             text-align: right;
